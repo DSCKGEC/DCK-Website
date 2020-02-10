@@ -651,3 +651,148 @@ body {
   text-transform: capitalize;
   opacity: 1;
 }
+.ab-link1{
+  position: absolute;
+  top: 3661px;
+  left: 103px;
+  width: 66px;
+  height: 22px;
+  text-align: left;
+  font: Regular 16px/22px Open Sans;
+  letter-spacing: 0;
+  color: #7A7474;
+  opacity: 1;
+}
+.ab-link2{
+top: 3690px;
+position: absolute;
+left: 103px;
+width: 122px;
+height: 22px;
+text-align: left;
+font: Regular 16px/22px Open Sans;
+letter-spacing: 0;
+color: #7A7474;
+opacity: 1;
+}
+.ab-link3{
+top: 3715px;
+position: absolute;
+left: 103px;
+width: 112px;
+height: 22px;
+text-align: left;
+font: Regular 16px/22px Open Sans;
+letter-spacing: 0;
+color: #7A7474;
+opacity: 1;
+}
+.li-link1{
+top: 3661px;
+position: absolute;
+left: 536px;
+width: 50px;
+height: 22px;
+text-align: left;
+font: Regular 16px/22px Open Sans;
+letter-spacing: 0;
+color: #7A7474;
+opacity: 1;
+}
+.li-link2{
+top: 3688px;
+position: absolute;
+left: 536px;
+width: 162px;
+height: 22px;
+text-align: left;
+font: Regular 16px/22px Open Sans;
+letter-spacing: 0;
+color: #7A7474;
+opacity: 1;
+}
+.li-link3{
+top: 3715px;
+position: absolute;
+left: 536px;
+width: 144px;
+height: 22px;
+text-align: left;
+font: Regular 16px/22px Open Sans;
+letter-spacing: 0;
+color: #7A7474;
+opacity: 1;
+}  
+.so-link1{
+top: 3661px;
+position: absolute;
+left: 940px;
+width: 199px;
+height: 22px;
+text-align: left;
+letter-spacing: 0;
+color: #7A7474;
+opacity: 1;
+}
+
+.so-link2{
+position: absolute;
+top: 3701px;
+left: 943px;
+width: 25px;
+height: 25px;
+background: transparent url('templates/images/Rectangle_12.png') 0% 0% no-repeat padding-box;
+border: 1px solid #00000000;
+opacity: 1;
+}
+.so-link3{
+position: absolute;
+top: 3697px;
+left: 982px;
+width: 33px;
+height: 33px;
+background: transparent url('templates/images/Rectangle_13.png') 0% 0% no-repeat padding-box;
+opacity: 1;
+}
+.so-link4{
+  top: 3701px;
+  position: absolute;
+  left: 1032px;
+  width: 26px;
+  height: 25px;
+  background: transparent url('templates/images/Rectangle_14.png') 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+.footer-logo{
+position: absolute;
+top: 3826px;
+left: 78px;
+width: 46px;
+height: 52px;
+background: transparent url('templates/images/logo.png') 0% 0% no-repeat padding-box;
+opacity: 1;
+}
+.footer-caption{
+  position: absolute;
+  top: 3850px;
+  left: 140px;
+  width: 66px;
+  height: 22px;
+  text-align: left;
+  font: Regular 16px/22px Open Sans;
+  letter-spacing: 0;
+  color: #7A7474;
+  opacity: 1;
+}
+.footer-text{
+  position: absolute;
+  top: 3850px;
+  left: 1040px;
+  width: 66px;
+  height: 22px;
+  text-align: left;
+  font: Regular 16px/22px Open Sans;
+  letter-spacing: 0;
+  color: #7A7474;
+  opacity: 1;
+}
