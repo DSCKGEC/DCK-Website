@@ -1,8 +1,11 @@
 const express = require("express");
+
 //api router brought in
 const api = require("./routes/api");
 
 const app = express();
+const db = require('./database_connection');
+
 
 //port number will either be taken from the process.env 
 //or the default fallback is 3000

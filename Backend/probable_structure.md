@@ -1,3 +1,7 @@
+# Points to be noted before getting started with the code
+
+1. The names of files containig models are on uppercase
+
 # API Routes
 
 **/api/events/all**
@@ -12,7 +16,7 @@
         {
             "event_id": "27fec12313kebn",
             "event_name": "123 event",
-            "event_date": 12/12/12,
+            "event_date": 12/12/12,(contains the start time as well)
             "event_coordinators": [],
             "event_location": "",
             "event_duration": "2.5hours",
@@ -39,7 +43,7 @@
     "event_date": 12/12/12,
     "event_coordinators": [],
     "event_location": "",
-    "event_duration": "2.5hours",
+    "event_duration": 2.5, //number denoting number of hours
     "event_pictures": [],
     "event_details": "",
     "event_participation_count": 10
@@ -59,10 +63,11 @@
 ```JSON
 {
     "event_name": "123 event",
-    "event_date": 12/12/12,
+    "event_date": "2020-02-12T14:00:00.000",
+    //(format: yyyy-mm-ddThh:mm:ss.000)
     "event_coordinators": [],
     "event_location": "",
-    "event_duration": "2.5hours",
+    "event_duration": 2.5,
     "event_pictures": [],
     "event_details": "",
     "user_id": "",
