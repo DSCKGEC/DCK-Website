@@ -1,31 +1,20 @@
 import React, {Component} from 'react';
-import Navbar from './components/navbar.js';
-import Topbar from './components/topbar.js';
-import AboutUs from './components/about.js';
-import Activity from './components/activities.js';
-import Team from './components/team.js';
-import Cards from './components/cards.js';
-import Partners from './components/partners.js';
-import AboutKgec from './components/about_kgec.js';
-import Footer from './components/footer.js';
+import HomePage from './components/homepage.js';
+import EventPage from './components/eventpage.js';
 
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 
-class App extends Component{
+class Homepage extends Component{
 
   render(){
     return(
-      <body>
-        <Navbar/>
-        <Topbar/>
-        <AboutUs/>
-        <Activity/>
-        <Team/>
-        <Cards/>
-        <Partners/>
-        <AboutKgec/>
-        <Footer/>
-      </body>
+      <Router>
+        <Switch>
+          <Route path="/" exact component = {HomePage} />
+          <Route path="/events" exact component= {EventPage} />
+        </Switch>
+      </Router>
     ); 
   }
 }
-export default App;
+export default Homepage;
