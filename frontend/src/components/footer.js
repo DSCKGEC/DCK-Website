@@ -7,7 +7,7 @@ class Footer extends Component{
         <div>
             <div className= "footer"></div>
             <div className="footer-about">About</div>
-            <div className="ab-link1">DCKGEC</div>
+            <div className="ab-link1">DC KGEC</div>
             <div className="ab-link2">Developer Clubs</div>
             <div className="ab-link3">Meet the Team</div>
             
@@ -22,8 +22,8 @@ class Footer extends Component{
             <div className="so-link3"></div>
             <div className="so-link4"></div>
             <div className="footer-logo"></div>
-            <div className="footer-caption">DCKGEC</div>
-            <div className="footer-text">©Copyright DCKGEC</div>
+            <div className="footer-caption">DC KGEC</div>
+            <div className="footer-text">© Copyright DC KGEC</div>
             
             
         </div>

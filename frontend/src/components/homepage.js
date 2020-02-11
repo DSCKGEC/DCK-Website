@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import Navbar from './navbar.js';
 import Topbar from './topbar.js';
 import AboutUs from './about.js';
 import Activity from './activities.js';
@@ -8,14 +7,16 @@ import Cards from './cards.js';
 import Partners from './partners.js';
 import AboutKgec from './about_kgec.js';
 import Footer from './footer.js';
+import Navbar from './navbar.js';
 
 
 class Homepage extends Component{
 
   render(){
     return(
-      <body> 
-          <Navbar/>
+          <div className="body">
+          
+          <Navbar />
           <Topbar/>
           <AboutUs/>
           <Activity/>
@@ -24,7 +25,7 @@ class Homepage extends Component{
           <Partners/>
           <AboutKgec/>
           <Footer/>
-      </body>
+          </div>
     ); 
   }
 }
