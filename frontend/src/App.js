@@ -1,21 +1,20 @@
 import React, {Component} from 'react';
-import Homepage from './components/homepage.js';
-import Events from './components/events.js';
-import {Router,Route,Switch,Link} from 'react-router';
+import HomePage from './components/homepage.js';
+import EventPage from './components/eventpage.js';
 
-class App extends Component{
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+
+class Homepage extends Component{
 
   render(){
     return(
-      <body> 
-        <Router>
+      <Router>
         <Switch>
-          <Route path="/"><Homepage /></Route>
-          <Route path="/events"><Events /></Route>
+          <Route path="/" exact component = {HomePage} />
+          <Route path="/events" exact component= {EventPage} />
         </Switch>
-        </Router>
-      </body>
+      </Router>
     ); 
   }
 }
-export default App;
+export default Homepage;
