@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import HomePage from './components/homepage.js';
 import EventPage from './components/eventpage.js';
 

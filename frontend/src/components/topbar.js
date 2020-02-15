@@ -1,4 +1,6 @@
 import React, {Component} from 'react';
+import { Button } from 'react-bootstrap';
+
 
 class Topbar extends Component{
 
@@ -10,7 +12,8 @@ class Topbar extends Component{
             <div className="logo-topbar"></div>
             <div className="title-topbar">Developers Club KGEC</div>
             <div className="text-topbar">Kalyani Government Engineering College</div>
-            <button className="sign-up-topbar">Call to Action</button>
+            <Button className="sign-up-topbar" variant="primary">Call to Action</Button>
+
         </div>
     ); 
   }

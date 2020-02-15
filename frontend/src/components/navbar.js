@@ -1,22 +1,33 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
+import { Navbar, Nav, Button, Container } from 'react-bootstrap';
+
  
-class Navbar extends Component{
+class NavbarMod extends Component{
 
   render(){
     return(
-        <div>
-              
-              <div className="navbar-text-home"><Link to ="/">HOME</Link></div>
-              <div className="navbar-text-events"><Link to="/events">EVENTS</Link></div>
-              <div className="navbar-text-team"><Link to = "/team">TEAM</Link></div>
-              <div className="navbar-text-blog"><Link to="/blog">BLOG</Link></div>
-                  
-              <div className = "img-logo"></div>
-              <div className= "title">dc kgec</div>
-              <button className = "sign-up">sign up</button> 
-        </div>
+      <>
+        <Navbar collapseOnSelect expand="lg" bg="light" variant="light">
+        <Navbar.Brand href="/" className = "img-logo"></Navbar.Brand>
+        <Navbar.Brand href="/">DCKGEC</Navbar.Brand>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav">
+          <Nav className="mr-auto">
+            <Nav.Link href="/">Home</Nav.Link>
+            <Nav.Link href="/events">Events</Nav.Link>
+            <Nav.Link href="/team">Team</Nav.Link>
+            <Nav.Link href="/blog">Blog</Nav.Link>
+            <div ></div>
+          </Nav>
+          <Nav>
+            <Nav.Link href="/login">Login</Nav.Link>
+            <Nav.Link href="/register">Register</Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Navbar>
+      </>
     ); 
   }
 }
-export default Navbar;
+export default NavbarMod;
