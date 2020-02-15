@@ -17,7 +17,7 @@ class Footer extends Component{
             <div className="li-link3">Read our magazine</div>
             
             <div className="footer-social">Social</div>
-            <div className="so-link1">Email: sample@gmail.com</div>
+            <div className="so-link1">Email: kgec.developers.circle@gmail.com</div>
             <div className="so-link2"></div>
             <div className="so-link3"></div>
             <div className="so-link4"></div>

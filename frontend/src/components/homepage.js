@@ -7,7 +7,7 @@ import Cards from './cards.js';
 import Partners from './partners.js';
 import AboutKgec from './about_kgec.js';
 import Footer from './footer.js';
-import Navbar from './navbar.js';
+import NavbarMod from './navbar.js';
 
 
 class Homepage extends Component{
@@ -15,8 +15,7 @@ class Homepage extends Component{
   render(){
     return(
           <div className="body">
-          
-          <Navbar />
+          <NavbarMod />
           <Topbar/>
           <AboutUs/>
           <Activity/>
