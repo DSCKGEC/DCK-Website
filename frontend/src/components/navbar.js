@@ -7,9 +7,10 @@ class NavbarMod extends Component{
 
   render(){
     return(
-      <>
-        <Navbar collapseOnSelect expand="lg" bg="light" variant="light">
-        <Navbar.Brand href="/" className = "img-logo"></Navbar.Brand>
+      
+        <Navbar className="w-100" collapseOnSelect expand="lg" bg="light" variant="light">
+          <Container>
+          <Navbar.Brand href="/" className = "img-logo"></Navbar.Brand>
         <Navbar.Brand href="/">DCKGEC</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
@@ -25,8 +26,9 @@ class NavbarMod extends Component{
             <Nav.Link href="/register">Register</Nav.Link>
           </Nav>
         </Navbar.Collapse>
+          </Container>
+        
       </Navbar>
-      </>
     ); 
   }
 }

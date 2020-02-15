@@ -8,21 +8,25 @@ import Partners from './partners.js';
 import AboutKgec from './about_kgec.js';
 import Footer from './footer.js';
 import NavbarMod from './navbar.js';
+import { Container } from 'react-bootstrap';
 
 
 class Homepage extends Component{
 
   render(){
     return(
-          <div className="body">
+          <div>
           <NavbarMod />
-          <Topbar/>
-          <AboutUs/>
-          <Activity/>
-          <Team/>
-          <Cards/>
-          <Partners/>
-          <AboutKgec/>
+          <Container>
+            <Topbar/>
+            <AboutUs/>
+            <Activity/>
+            <Team/>
+            <Cards/>
+            <Partners/>
+            <AboutKgec/>
+          </Container>
+          
           <Footer/>
           </div>
     ); 

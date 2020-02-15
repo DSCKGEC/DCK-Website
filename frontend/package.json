@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@mdi/js": "^4.9.95",
+    "@mdi/react": "^1.2.1",
     "antd": "^3.25.3",
     "bootstrap": "^4.4.1",
     "react": "^16.12.0",
