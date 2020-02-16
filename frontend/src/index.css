@@ -1,6 +1,6 @@
 .body {
-  position: absolute;
-
+  font-family: 'Open Sans', sans-serif;
+  margin: auto;
   top: 0px;
   left: 0px;
   width: 1366px;
@@ -11,7 +11,6 @@
 
 .topbar {
   position: absolute;
-
   top: 128px;
   left: 78px;
   width: 1300px;
@@ -83,12 +82,11 @@
   opacity: 1;
 }
 .img-logo {
-  position: absolute;
-
-  top: 27px;
-  left: 78px;
-  width: 346px;
-  height: 52px;
+  position: relative;
+  margin: 1em;
+  padding: 1em;
+  width: 50px;
+  height: 50px;
   background: transparent url("templates/images/logo.png") 0% 0% no-repeat
     padding-box;
   opacity: 1;
@@ -135,7 +133,6 @@
   width: 344px;
   height: 20px;
   text-align: center;
-  font: Bold 20px Open Sans;
   color: #464242;
   text-transform: capitalize;
   opacity: 0.7;
@@ -192,8 +189,8 @@
 .about-text {
   position: absolute;
 
-  top: 701px;
-  left: 1126px;
+  top: 720px;
+  left: 700px;
   width: 344px;
   height: 41px;
   font: Bold 30px/41px Open Sans;
@@ -205,9 +202,9 @@
 .about-text-sub {
   position: absolute;
 
-  top: 746px;
-  left: 1056px;
-  width: 208px;
+  top: 780px;
+  left: 696px;
+  width: 300px;
   height: 22px;
   text-align: left;
   font: Regular 16px/22px Open Sans;
@@ -271,7 +268,7 @@
 .activity-text {
   position: absolute;
 
-  top: 1271px;
+  top: 1291px;
   left: 115px;
   width: 139px;
   height: 41px;
@@ -296,7 +293,7 @@
 }
 .activity-text-sub {
   position: absolute;
-  top: 1314px;
+  top: 1354px;
   left: 115px;
   width: 313px;
   height: 22px;
@@ -355,8 +352,8 @@
 }
 .team-title {
   position: absolute;
-  top: 1708px;
-  left: 1175px;
+  top: 1722px;
+  left: 680px;
   width: 83px;
   height: 41px;
   text-align: left;
@@ -368,9 +365,9 @@
 }
 .team-text-sub {
   position: absolute;
-  top: 1749px;
-  left: 1024px;
-  width: 234px;
+  top: 1779px;
+  left: 682px;
+  width: 330px;
   height: 22px;
   text-align: left;
   font: Regular 16px/22px Open Sans;
@@ -417,7 +414,7 @@
   top: 2253px;
   left: 103px;
   width: 570px;
-  height: 430px;
+  height: 450px;
   background: #ffffff 0% 0% no-repeat padding-box;
   box-shadow: 0px 3px 12px #00000029;
   border-radius: 12px;
@@ -428,7 +425,7 @@
   top: 2253px;
   left: 713px;
   width: 570px;
-  height: 430px;
+  height: 450px;
   background: #ffffff 0% 0% no-repeat padding-box;
   box-shadow: 0px 3px 12px #00000029;
   border-radius: 12px;
@@ -458,7 +455,7 @@
 .card-events-title {
   position: absolute;
   top: 2483px;
-  left: 131px;
+  left: 161px;
   width: 83px;
   height: 34px;
   text-align: left;
@@ -471,7 +468,7 @@
 .card-magazine-title {
   position: absolute;
   top: 2483px;
-  left: 741px;
+  left: 771px;
   width: 385px;
   height: 34px;
   text-align: left;
@@ -484,7 +481,7 @@
 .card-events-text {
   position: absolute;
   top: 2528px;
-  left: 131px;
+  left: 161px;
   width: 449px;
   height: 92px;
   text-align: left;
@@ -496,7 +493,7 @@
 .card-magazine-text {
   position: absolute;
   top: 2528px;
-  left: 741px;
+  left: 771px;
   width: 448px;
   height: 69px;
   text-align: left;
@@ -753,7 +750,7 @@ opacity: 1;
 top: 3661px;
 position: absolute;
 left: 940px;
-width: 199px;
+width: 400px;
 height: 22px;
 text-align: left;
 letter-spacing: 0;

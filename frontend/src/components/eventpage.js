@@ -7,6 +7,7 @@ class EventPage extends Component{
         return(
             <div className="body">
                 <Navbar />
+                    
                 <Footer />
             </div>
         );
