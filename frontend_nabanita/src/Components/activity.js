@@ -1,62 +1,29 @@
 import React from "react";
-import { Card, CardGroup } from "react-bootstrap";
+import { Card } from "react-bootstrap";
 import Button from "./button";
 import image from "../Assets/undraw_shared_workspace_hwky@2x.png";
+import Title from "../Styles/title";
+import SubTitle from "../Styles/subTitle";
+import BodyText from "../Styles/bodyText";
+import StyledCardGroup from "../Styles/styledCardGroup";
 
 class Activity extends React.Component {
   render() {
     return (
       <div>
-        <CardGroup
-          style={{
-            marginLeft: 10 + `%`,
-            marginRight: 10 + `%`,
-            marginBottom: 10 + `em`,
-            marginTop: 10 + `em`,
-            border: `none`
-          }}
-        >
+        <StyledCardGroup>
           <Card
             style={{
               border: `none`
             }}
           >
-            <Card.Title
-              style={{
-                fontFamily: [`Open Sans`, `sans-serif`],
-                fontSize: 32 + `px`,
-                color: `#464242`,
-                display: `flex`
-              }}
-            >
-              Activities
-            </Card.Title>
-            <Card.Subtitle
-              style={{
-                fontFamily: [`Open Sans`, `sans-serif`],
-                fontSize: 16 + `px`,
-                color: `#7a7474`,
-                padding: 0 + `rem`,
-                paddingBottom: 1 + `rem`,
-                display: `flex`
-              }}
-            >
-              How do we make technology fun to learn?
-            </Card.Subtitle>
-            <Card.Body
-              style={{
-                fontFamily: [`Open Sans`, `sans-serif`],
-                fontSize: 16 + `px`,
-                color: `#464242`,
-                padding: 0 + `rem`,
-
-                display: `flex`
-              }}
-            >
+            <Title>Activities</Title>
+            <SubTitle>How do we make technology fun to learn?</SubTitle>
+            <BodyText>
               Developers Club KGEC is inspired by the Google Developers' Family.
               The motive is to create a local ecosystem of Developers in and
               around the Campus. And having fun doing it.
-            </Card.Body>
+            </BodyText>
             {/* TODO: Button "Check Out Our Activities"
              * Link: Read about our experiences*/}
             <Button>CHECK OUT OUR ACTIVITIES</Button>
@@ -65,11 +32,11 @@ class Activity extends React.Component {
             style={{
               border: `none`
             }}
-            className="d-none d-lg-block"
+            className="d-none d-md-block"
           >
             <Card.Img src={image}></Card.Img>
           </Card>
-        </CardGroup>
+        </StyledCardGroup>
       </div>
     );
   }

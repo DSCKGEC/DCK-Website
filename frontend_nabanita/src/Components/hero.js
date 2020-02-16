@@ -1,17 +1,21 @@
 import React from "react";
-import { Card, CardGroup, Container } from "react-bootstrap";
+import { Card, CardGroup } from "react-bootstrap";
 import Button from "./button";
 import image from "../Assets/Developers_doing_discussion_ab@2x.png";
 import styled from "styled-components";
+import Title from "../Styles/title";
+import logo from "../Assets/logo_bk@2x.png";
+
+import BodyText from "../Styles/bodyText";
 
 const StyledCardGroup = styled(CardGroup)`
-  @media (max-width: 768px) {
+  @media (max-width: 1024px) {
     background-color: transparent;
     margin: 0;
     padding-left: 10%;
     padding-right: 10%;
-    padding-bottom: 10em;
-    padding-top: 10em;
+    padding-bottom: 10%;
+    padding-top: 10%;
     border: none;
     background-image: url(${image});
     background-attachment: fixed;
@@ -19,13 +23,27 @@ const StyledCardGroup = styled(CardGroup)`
     background-repeat: no-repeat;
     background-size: cover;
   }
-  @media (min-width: 768px) {
+  @media (min-width: 1024px) {
     padding-left: 10%;
     padding-right: 10%;
-    padding-bottom: 10em;
-    padding-top: 10em;
+    padding-bottom: 10%;
+    padding-top: 10%;
     border: none;
   }
+`;
+
+const StyledTitle = styled(Title)`
+  text-align: center;
+  align-self: center;
+  display: flex;
+  font-size: 42px;
+`;
+
+const StyledBodyText = styled(BodyText)`
+  text-align: center;
+  align-self: center;
+  display: flex;
+  font-size: 24px;
 `;
 
 class Hero extends React.Component {
@@ -38,28 +56,20 @@ class Hero extends React.Component {
             backgroundColor: `transparent`
           }}
         >
-          <Card.Title
+          <img
+            src={logo}
+            height="100"
+            width="100"
             style={{
-              fontFamily: [`Open Sans`, `sans-serif`],
-              fontSize: 42 + `px`,
-              color: `#464242`,
-              textAlign: `center`
-            }}
-          >
-            Developers Club KGEC
-          </Card.Title>
-          <Card.Body
-            style={{
-              fontFamily: [`Open Sans`, `sans-serif`],
-              fontSize: 16 + `px`,
-              color: `#464242`,
-              textAlign: `center`,
               display: `flex`,
-              alignSelf: `center`
+              alignSelf: `center`,
+              marginBottom: 3 + `%`
             }}
-          >
+          ></img>
+          <StyledTitle>Developers Club KGEC</StyledTitle>
+          <StyledBodyText>
             Kalyani Government Engineering College
-          </Card.Body>
+          </StyledBodyText>
           <Button>CALL TO ACTION</Button>
         </Card>
         <Card
