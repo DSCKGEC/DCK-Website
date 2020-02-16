@@ -13,6 +13,7 @@ class NavBar extends React.Component {
       >
         <Navbar.Brand href="#home">
           <img
+            alt="Logo"
             src={logo}
             style={{
               height: 25 + "px",

@@ -1,6 +1,6 @@
 import React from "react";
 import { Card, CardGroup } from "react-bootstrap";
-import Button from "./button";
+// import Button from "./button";
 import image from "../Assets/ID1552715138phpC3AcrS@2x.png";
 
 class KGEC extends React.Component {

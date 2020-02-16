@@ -7,6 +7,7 @@ import Cards from "../Components/cards";
 import KGEC from "../Components/kgec";
 import Partner from "../Components/partner";
 import Footer from "../Components/footer";
+import Social from "../Components/social";
 import Team from "../Components/team";
 
 class Home extends React.Component {
@@ -21,6 +22,7 @@ class Home extends React.Component {
         <Cards />
         <Partner />
         <KGEC />
+        <Social />
         <Footer />
       </div>
     );
