@@ -6,7 +6,7 @@ class Team extends Component{
 
   render(){
     return(
-        <Container>
+        <Container  className = "h-50 w-100">
         <Row>
         <Col xs={9} md={6}><img className = "img-team"></img></Col>
         <Col xs={9} md={6}>

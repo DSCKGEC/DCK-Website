@@ -6,7 +6,7 @@ class AboutUs extends Component{
 
   render(){
     return(
-        <Container>
+        <Container  className = "component">
             <Row>
               <Col xs={9} md={6}><img className = "img-about"></img></Col>
               <Col xs={9} md={6}>

@@ -7,7 +7,7 @@ class NavbarMod extends Component{
   render(){
     return(
       <>
-        <Navbar collapseOnSelect expand="lg" bg="light" variant="light">
+        <Navbar collapseOnSelect expand="lg" bg="light" variant="light" fixed="top">
         <Navbar.Brand href="/" className = "img-logo"></Navbar.Brand>
         <Navbar.Brand href="/">DCKGEC</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />

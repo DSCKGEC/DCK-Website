@@ -6,7 +6,7 @@ class Activity extends Component{
 
   render(){
     return(
-        <Container>
+        <Container  className = "h-50 w-100">
         <Row>
           <Col xs={9} md={6}>
             <p className="heading-main">Activities</p>

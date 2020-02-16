@@ -7,8 +7,9 @@ class Cards extends Component{
   render(){
     return(
         <Container>
-        <Row>
-        <Col xs={10} md={6}><Card style={{ width: '18rem' }}>
+        <Row justify-content-around>
+        <Col xs={10} md={6}  className = "align-self-center">
+        <Card className = "card-events">
         <Card.Img variant = "top" className = "card-events-img" />
         <Card.Body>
           <Card.Title>Events</Card.Title>
@@ -17,8 +18,10 @@ class Cards extends Component{
           </Card.Text>
           <Button variant="primary">Know More</Button>
         </Card.Body>
-      </Card></Col>
-        <Col xs={10} md={6}><Card style={{ width: '18rem' }}>
+      </Card>
+      </Col>
+        <Col xs={10} md={6}  className = "align-self-center">
+        <Card className = "card-magazine">
         <Card.Img variant="top" className = "card-magazine-img"/>
         <Card.Body>
           <Card.Title>Refresh - the Official Magazine</Card.Title>
@@ -27,10 +30,12 @@ class Cards extends Component{
           </Card.Text>
           <Button variant="primary">Read</Button>
         </Card.Body>
-      </Card></Col>
-        </Row>
+      </Card>
+      </Col>
         
-        </Container>
+      </Row>
+        
+      </Container>
     ); 
   }
 }
