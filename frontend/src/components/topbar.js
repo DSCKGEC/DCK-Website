@@ -1,20 +1,21 @@
 import React, {Component} from 'react';
-import { Button } from 'react-bootstrap';
+import { Button , Container, Row, Col} from 'react-bootstrap';
 
 
 class Topbar extends Component{
 
   render(){
     return(
-        <div>
-            <div className= "topbar"></div>
-            <div className="img-topbar"></div>
-            <div className="logo-topbar"></div>
-            <div className="title-topbar">Developers Club KGEC</div>
-            <div className="text-topbar">Kalyani Government Engineering College</div>
-            <Button className="sign-up-topbar" variant="primary">Call to Action</Button>
-
-        </div>
+        <Container>
+        <Row>
+        <Col xs={9} md={6}> 
+            <p className = "heading-main" >Developers Club KGEC </p>
+            <p className = "heading-sub">Kalyani Government Engineering College</p> 
+            <Button variant = "info">Call to Action</Button>
+        </Col>
+        <Col xs={9} md={6}><img className = "img-topbar"></img></Col>
+        </Row>
+        </Container>
     ); 
   }
 }

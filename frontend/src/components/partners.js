@@ -1,16 +1,18 @@
 import React, {Component} from 'react';
+import {Container, Row, Col} from 'react-bootstrap';
 
 class Partners extends Component{
 
   render(){
     return(
-        <div>
-            <div className= "partner-title">Partners</div>
-            <div className="partner-text">Collaborating for a better future</div>
-            <div className="partner-img1"></div>
-            <div className="partner-img2"></div>
-            <div className="partner-img3"></div>
-        </div>
+        <Container>
+        <Row>
+        <Col>
+        <p className = "heading-main">Partners</p>
+        <p className = "heading-sub">Collaborating for a better future</p>
+        </Col>
+        </Row>
+        </Container>
     ); 
   }
 }
