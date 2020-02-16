@@ -1,23 +1,41 @@
 import React from "react";
-import { Card, CardGroup } from "react-bootstrap";
+import { Card, CardGroup, Container } from "react-bootstrap";
 import Button from "./button";
 import image from "../Assets/Developers_doing_discussion_ab@2x.png";
+import styled from "styled-components";
+
+const StyledCardGroup = styled(CardGroup)`
+  @media (max-width: 768px) {
+    background-color: transparent;
+    margin: 0;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 10em;
+    padding-top: 10em;
+    border: none;
+    background-image: url(${image});
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  @media (min-width: 768px) {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 10em;
+    padding-top: 10em;
+    border: none;
+  }
+`;
 
 class Hero extends React.Component {
   render() {
     return (
-      <CardGroup
-        style={{
-          marginLeft: 10 + `%`,
-          marginRight: 10 + `%`,
-          marginBottom: 10 + `em`,
-          marginTop: 10 + `em`,
-          border: `none`
-        }}
-      >
+      <StyledCardGroup>
         <Card
           style={{
-            border: `none`
+            border: `none`,
+            backgroundColor: `transparent`
           }}
         >
           <Card.Title
@@ -52,7 +70,7 @@ class Hero extends React.Component {
         >
           <Card.Img src={image}></Card.Img>
         </Card>
-      </CardGroup>
+      </StyledCardGroup>
     );
   }
 }
