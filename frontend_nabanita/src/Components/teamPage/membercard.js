@@ -11,8 +11,8 @@ function mambercard(props) {
       style={{
         padding: 20 + `px`,
         margin: 10 + `px ` + 10 + `px`,
-        minWidth: 250 + `px`,
-        maxWidth: 95 + "%"
+        minWidth: 340 + `px`,
+        maxWidth: 85 + "%"
       }}
     >
       <CardImg

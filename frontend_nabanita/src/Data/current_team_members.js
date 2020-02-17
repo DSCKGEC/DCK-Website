@@ -8,12 +8,12 @@ import {
     mdiLinkedin,
     mdiWeb,
     mdiGithubCircle,
-    mdiMail
+    mdiEmail
 } from "@mdi/js";
 
 let current_team = [{
         name: "Ayushman Bilas Thakur",
-        post: "DC Lead",
+        post: "Community Lead",
         picture: ayushman,
         links: [{
                 to: 'twitter',
@@ -37,7 +37,7 @@ let current_team = [{
             },
             {
                 to: 'email',
-                icon: mdiMail,
+                icon: mdiEmail,
                 link: "mailto:ayushmanbilasthakur@gmail.com"
             }
         ]
@@ -58,14 +58,14 @@ let current_team = [{
             },
             {
                 to: 'email',
-                icon: mdiMail,
+                icon: mdiEmail,
                 link: "mailto:suchanachakraborty@gmail.com"
             }
         ]
     },
     {
         name: "Ankit Kurmi",
-        post: "??",
+        post: "Technical Co-ordinator",
         picture: ankit,
         links: [{
                 to: 'linkedin',
@@ -79,14 +79,23 @@ let current_team = [{
             },
             {
                 to: 'email',
-                icon: mdiMail,
+                icon: mdiEmail,
                 link: "mailto:ankitkurmi152@gmail.com"
             }
         ]
     },
     {
+        name: "Manojit Roy",
+        post: "Convenor & Human Resource Lead",
+        links: [{
+            to: 'linkedin',
+            icon: mdiLinkedin,
+            link: 'https://www.linkedin.com/in/manojit-roy-8a93a1183/'
+        }, ]
+    },
+    {
         name: "Soumik Adhikary",
-        post: "??",
+        post: "Head of Content & Event Co-ordinator",
         picture: soumik,
         links: [{
                 to: 'github',
@@ -95,11 +104,11 @@ let current_team = [{
             },
             {
                 to: 'email',
-                icon: mdiMail,
+                icon: mdiEmail,
                 link: "mailto:soumiknptel12@gmail.com"
             }
         ]
-    }
+    },
 ]
 
 export default current_team

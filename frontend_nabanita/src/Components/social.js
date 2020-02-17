@@ -1,6 +1,6 @@
 import React from "react";
 import { Card, CardGroup } from "react-bootstrap";
-import { mdiFacebook, mdiYoutube } from "@mdi/js";
+import { mdiFacebook, mdiYoutube, mdiEmail } from "@mdi/js";
 import Icon from "@mdi/react";
 
 
@@ -54,7 +54,7 @@ class Social extends React.Component {
             
             <a href="#">Developer Clubs</a>
       
-            <a href="/teams">Meet the Team</a>
+            <a href="/team">Meet the Team</a>
             
 
           </Card.Body>
@@ -88,7 +88,7 @@ class Social extends React.Component {
             }}
           >
             <a href="#" href="http://bit.ly/JoinDCKGEC" target="_blank">Join us</a>
-            <a href="#" target="_blank">Apply to be a Speaker</a>
+            <a href="#" href="http://bit.ly/DCK-Apply-Speaker" target="_blank">Apply to be a Speaker</a>
             <a href="#" target="_blank">Read our magazine</a>
           </Card.Body>
         </Card>
@@ -135,6 +135,13 @@ class Social extends React.Component {
                   path={mdiYoutube}
                   size={1.3}
                   title="YouTube"
+                ></Icon>
+            </a>
+            <a href="mailto:kgec.developers.circle@gmail.com" className="mr-2" target="_blank">    
+                <Icon
+                  path={mdiEmail}
+                  size={1.3}
+                  title="Email"
                 ></Icon>
             </a>
             </div>

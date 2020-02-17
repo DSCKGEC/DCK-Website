@@ -15,7 +15,7 @@ class NavBar extends React.Component {
           backgroundColor: `white`
         }}
       >
-        <Navbar.Brand href="#home">
+        <Navbar.Brand href="/">
           <img
             alt="Logo"
             src={logo}
@@ -33,11 +33,11 @@ class NavBar extends React.Component {
           style={{ border: `none` }}
         />
         <Navbar.Collapse id="basic-navbar-nav" className="py-2">
-          <Nav className="ml-auto flex-column flex-md-row">
+          <Nav activeKey={this.props.location.pathname} className="ml-auto flex-column flex-md-row">
             <Nav.Link href="/">HOME</Nav.Link>
             {/* <Nav.Link href="/events">EVENTS</Nav.Link> */}
             <Nav.Link href="/team">TEAM</Nav.Link>
-            <Nav.Link href="http://forum.dckgec.ml/" target="_blank" >FORUM</Nav.Link>
+            <Nav.Link href="http://forum.dckgec.ml/">FORUM</Nav.Link>
             {/* This is a hacky way to fix the spacing, should be fixed later */}
             <div style={{
               width: '20px',

@@ -28,11 +28,7 @@ class About extends React.Component {
           <Title>About Us</Title>
           <SubTitle>What do we do at DC KGEC?</SubTitle>
           <BodyText>
-            Google collaborates with university students who are passionate
-            about growing developer communities. Developer Student Club powered
-            by Google Developers is an initiative to grow their knowledge on
-            developer technologies and more through peer to peer workshops and
-            events, and gain relevant industry experience.
+          DC KGEC is a student led club, built on the power of communities. We believe that great things happen when young inquisitive minds come together, to explore new technologies and create stuff. It is also a way for students to bridge the industry-academia gap through peer-based, project focused learning.
           </BodyText>
           <Button>JOIN US</Button>
           {/* TODO:

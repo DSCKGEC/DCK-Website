@@ -1,19 +1,23 @@
 import dipan from '../Assets/profile_pic/Dipan_Roy.jpeg'
 import ritankar from '../Assets/profile_pic/Ritankar_Paul.jpeg'
-import puja from '../Assets/profile_pic/Puja_Sarkar.jpeg'
+import ramyajit from '../Assets/profile_pic/Ramyajit_Chowdhury.jpg'
+import nabanita from '../Assets/profile_pic/Nabanita_Sarkar.jpeg'
+import abhinav from '../Assets/profile_pic/Abhinav_Ghosh.jpeg'
 import indrashis from '../Assets/profile_pic/Indrashis_Ghosh.jpeg'
+import puja from '../Assets/profile_pic/Puja_Sarkar.jpeg'
+
 
 import {
     mdiTwitter,
     mdiLinkedin,
     mdiWeb,
-    mdiMail,
+    mdiEmail,
     mdiGithubCircle
 } from "@mdi/js";
 
 let previous_members = [{
         name: "Dipan Roy",
-        post: "DC KGEC Lead",
+        post: "Community Lead",
         picture: dipan,
         links: [{
                 to: 'linkedin',
@@ -32,7 +36,7 @@ let previous_members = [{
             },
             {
                 to: 'mail',
-                icon: mdiMail,
+                icon: mdiEmail,
                 link: "mailto:dipan.roy@kgec.edu.in"
             }
 
@@ -54,30 +58,62 @@ let previous_members = [{
             },
             {
                 to: 'mail',
-                icon: mdiMail,
+                icon: mdiEmail,
                 link: "mailto:ritankar.paul@kgec.edu.in"
             },
         ]
     },
     {
-        name: "Puja Sarkar",
-        post: "??",
-        picture: puja,
+        name: "Ramyajit Chowdhury",
+        post: "Editorial Head",
+        picture: ramyajit,
         links: [{
                 to: 'linkedin',
                 icon: mdiLinkedin,
-                link: "https://www.linkedin.com/in/ritankar-paul-95269513a/"
+                link: "http://www.linkedin.com/in/rey03"
             },
             {
-                to: 'mail',
-                icon: mdiMail,
-                link: "mailto:pujasarkar6054@gmail.com"
+                to: 'github',
+                icon: mdiGithubCircle,
+                link: "https://github.com/Ramyajit"
+            }
+        ]
+    },
+    {
+        name: "Nabanita Sarkar",
+        post: "Convenor",
+        picture: nabanita,
+        links: [{
+                to: 'linkedin',
+                icon: mdiLinkedin,
+                link: "https://www.linkedin.com/in/nabanita-sarkar"
+            },
+            {
+                to: 'github',
+                icon: mdiGithubCircle,
+                link: "https://github.com/nabanita-sarkar"
+            }
+        ]
+    },
+    {
+        name: "Abhinav Ghosh",
+        post: "Lead Designer",
+        picture: abhinav,
+        links: [{
+                to: 'linkedin',
+                icon: mdiLinkedin,
+                link: "https://www.linkedin.com/in/abhinav-ghosh/"
+            },
+            {
+                to: 'github',
+                icon: mdiGithubCircle,
+                link: "https://github.com/abhinavgsh"
             }
         ]
     },
     {
         name: "Indrasish Ghosh",
-        post: "??",
+        post: "Co-convenor",
         picture: indrashis,
         links: [{
                 to: 'linkedin',
@@ -86,11 +122,27 @@ let previous_members = [{
             },
             {
                 to: 'mail',
-                icon: mdiMail,
+                icon: mdiEmail,
                 link: "mailto:Indrasish2013@gmail.com"
             }
         ]
-    }
+    },
+    {
+        name: "Puja Sarkar",
+        post: "Human Resource Manager",
+        picture: puja,
+        links: [{
+                to: 'linkedin',
+                icon: mdiLinkedin,
+                link: "https://www.linkedin.com/in/ritankar-paul-95269513a/"
+            },
+            {
+                to: 'mail',
+                icon: mdiEmail,
+                link: "mailto:pujasarkar6054@gmail.com"
+            }
+        ]
+    },
 ]
 
 export default previous_members;

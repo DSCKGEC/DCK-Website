@@ -9,7 +9,7 @@ import logo from "../Assets/logo_bk@2x.png";
 import BodyText from "../Styles/bodyText";
 
 const StyledCardGroup = styled(CardGroup)`
-  @media (max-width: 768px) {
+  @media (max-width: 991px) {
     background-color: transparent;
     margin: 0;
     padding-left: 10%;
@@ -26,7 +26,7 @@ const StyledCardGroup = styled(CardGroup)`
     background-size: cover;
     color: #eee;
   }
-  @media (min-width: 1024px) {
+  @media (min-width: 991px) {
     padding-left: 10%;
     padding-right: 10%;
     padding-bottom: 10%;
@@ -40,7 +40,7 @@ const StyledTitle = styled(Title)`
   align-self: center;
   display: flex;
   font-size: 42px;
-  @media(max-width: 768px){
+  @media(max-width: 991px){
     color: white !important;
   }
 `;

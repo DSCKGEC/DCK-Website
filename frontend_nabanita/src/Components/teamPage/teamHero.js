@@ -1,11 +1,12 @@
+// this is a temporary solution to get the hero component of teams page not have the buton, which is in the homepage team component.. in future we need a better solution
+
 import React from "react";
 import { Card } from "react-bootstrap";
-import Button from "./button";
-import image from "../Assets/undraw_team_page_pgpr@2x.png";
-import Title from "../Styles/title";
-import SubTitle from "../Styles/subTitle";
-import BodyText from "../Styles/bodyText";
-import StyledCardGroup from "../Styles/styledCardGroup";
+import image from "../../Assets/undraw_team_page_pgpr@2x.png";
+import Title from "../../Styles/title";
+import SubTitle from "../../Styles/subTitle";
+import BodyText from "../../Styles/bodyText";
+import StyledCardGroup from "../../Styles/styledCardGroup";
 
 class Team extends React.Component {
   render() {
@@ -35,13 +36,6 @@ class Team extends React.Component {
             the success of DC to the wonderful individuals who put untiring
             efforts for it.
           </BodyText>
-          <a href ="/team" className="btn btn-primary mx-auto" style ={{
-            backgroundColor: `#536DFE`,
-            width: `fit-content`
-
-          }}>MEET OUR TEAM</a>
-          {/* TODO:
-           * Link: Learn more about Developer Clubs*/}
         </Card>
       </StyledCardGroup>
     );
