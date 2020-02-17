@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Source+Sans+Pro&display=swap');
+
+.body {
+    overflow-x: hidden !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+
+.navbar {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    z-index: 10;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+p, span {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.navbar-nav {
+    /* vertical-align: middle; */
+}
+
+.btn-primary {
+    background-color: #5352ED !important;
+    border-color: #5352ED !important;;
+}
+.btn-primary:hover {
+    background-color: #70A1FF !important;
+    border-color: #70A1FF !important;;
+
+}
+
+
+.tag_details {
+    font-size: 18px;
+}
+
+.p-lr-20 {
+    margin-right: 20px;
+    margin-left: 10px;
+}
