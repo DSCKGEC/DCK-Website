@@ -7,7 +7,7 @@ import Icon from "@mdi/react";
 class Social extends React.Component {
   render() {
     return (
-      <CardGroup
+      <div
         style={{
           marginLeft: 10 + `%`,
           marginRight: 10 + `%`,
@@ -140,7 +140,7 @@ class Social extends React.Component {
             </div>
           </Card.Body>
         </Card>
-      </CardGroup>
+      </div>
     );
   }
 }

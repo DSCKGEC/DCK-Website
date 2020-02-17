@@ -1,5 +1,4 @@
 import React from "react";
-import { Card } from "react-bootstrap";
 import Title from "../Styles/title";
 import SubTitle from "../Styles/subTitle";
 import styled from "styled-components";
@@ -27,7 +26,7 @@ const StyledSubTitle = styled(SubTitle)`
 class Partner extends React.Component {
   render() {
     return (
-      <Card
+      <div
         style={{
           marginLeft: 10 + `%`,
           marginRight: 10 + `%`,
@@ -40,7 +39,6 @@ class Partner extends React.Component {
           <StyledTitle>Partners</StyledTitle>
           <StyledSubTitle>Collaborating for a better future</StyledSubTitle>
         </div>
-        <div
         className="d-flex"
           style={{
             border: `none`,
@@ -56,8 +54,6 @@ class Partner extends React.Component {
           <Card.Img src={fb_dev} style={{ height: 150, width:190, padding: 30 }} className="d-block mx-auto my-2"/>
           <Card.Img src={mw_logo} style={{ height: 150, width: 150, padding: 30 }} className="d-block mx-auto my-2"/>
         </div>
-      </Card>
     );
   }
 }
-export default Partner;

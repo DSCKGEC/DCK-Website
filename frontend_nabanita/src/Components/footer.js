@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, CardGroup } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 
 class Footer extends React.Component {
   render() {
