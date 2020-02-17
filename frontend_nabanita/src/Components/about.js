@@ -1,25 +1,21 @@
 import React from "react";
-import { Card, CardGroup } from "react-bootstrap";
+import { Card } from "react-bootstrap";
 import Button from "./button";
 import image from "../Assets/ID69096379_103099181060134_307@2x.png";
+import Title from "../Styles/title";
+import SubTitle from "../Styles/subTitle";
+import BodyText from "../Styles/bodyText";
+import StyledCardGroup from "../Styles/styledCardGroup";
 
 class About extends React.Component {
   render() {
     return (
-      <CardGroup
-        style={{
-          marginLeft: 10 + `%`,
-          marginRight: 10 + `%`,
-          marginBottom: 3 + `em`,
-          marginTop: 3 + `em`,
-          border: `none`
-        }}
-      >
+      <StyledCardGroup>
         <Card
           style={{
             border: `none`
           }}
-          className="d-none d-lg-block"
+          className="d-none d-md-block my-auto"
         >
           <Card.Img src={image}></Card.Img>
         </Card>
@@ -29,50 +25,20 @@ class About extends React.Component {
             margin: 'auto ' + 10 + `px`
           }}
         >
-          <Card.Title
-            style={{
-              fontFamily: [`Open Sans`, `sans-serif`],
-              fontSize: 32 + `px`,
-              color: `#464242`,
-              display: `flex`
-            }}
-          >
-            About Us
-          </Card.Title>
-          <Card.Subtitle
-            style={{
-              fontFamily: [`Open Sans`, `sans-serif`],
-              fontSize: 16 + `px`,
-              color: `#7a7474`,
-              padding: 0 + `rem`,
-              paddingBottom: 1 + `rem`,
-              display: `flex`
-            }}
-          >
-            What do we do at DC KGEC?
-          </Card.Subtitle>
-          <div
-          class="mb-3"
-            style={{
-              fontFamily: [`Open Sans`, `sans-serif`],
-              fontSize: 16 + `px`,
-              color: `#464242`,
-              padding: 0 + `rem`,
-
-              display: `flex`
-            }}
-          >
+          <Title>About Us</Title>
+          <SubTitle>What do we do at DC KGEC?</SubTitle>
+          <BodyText>
             Google collaborates with university students who are passionate
             about growing developer communities. Developer Student Club powered
             by Google Developers is an initiative to grow their knowledge on
             developer technologies and more through peer to peer workshops and
             events, and gain relevant industry experience.
-          </div>
+          </BodyText>
           <Button>JOIN US</Button>
-          {/* TODO: Button "Join Us"
+          {/* TODO:
            * Link: Learn more about Developer Clubs*/}
         </Card>
-      </CardGroup>
+      </StyledCardGroup>
     );
   }
 }

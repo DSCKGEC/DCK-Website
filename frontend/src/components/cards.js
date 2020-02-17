@@ -1,23 +1,47 @@
 import React, {Component} from 'react';
-import { Button } from 'react-bootstrap';
+import { Button, Container, Row, Col, Card} from 'react-bootstrap';
 
 
 class Cards extends Component{
 
   render(){
     return(
-        <div>
-            <div className= "card-events"></div>
-                <div className="card-events-img"></div>
-                <div className="card-events-title">Events</div>
-                <Button className="card-events-button">KNOW MORE</Button>
-                <div className="card-events-text">Here at DC KGEC we put the fun in functions and events. Attend Study Jams/ Hackathons/ Developer Conferences to learn more about the latest technologies.</div>
-            <div className="card-magazine"></div>
-                <div className="card-magazine-img"></div>
-                <div className="card-magazine-title">Refresh - the Official Magazine</div>
-                <Button className="card-magazine-button">READ IT</Button>
-                <div className="card-magazine-text">We put in all our activities into our half-yearly magazine, Refresh! Exciting articles on tech, and contributions from our student members.</div>
-        </div>
+        <Container style={{
+          marginLeft: 10 + `%`,
+          marginRight: 10 + `%`,
+          marginBottom: 10 + `em`,
+          marginTop: 10 + `em`,
+          justifyContent: `space-evenly`
+          }}>
+        <Row justify-content-around>
+        <Col xs={10} md={6}  className = "align-self-center">
+        <Card className = "card">
+        <Card.Img variant = "top" className = "card-events-img" />
+        <Card.Body>
+          <Card.Title>Events</Card.Title>
+          <Card.Text>
+          Here at DC KGEC we put the fun in functions and events. Attend Study Jams/ Hackathons/ Developer Conferences to learn more about the latest technologies.
+          </Card.Text>
+          <Button variant="warning">Know More</Button>
+        </Card.Body>
+      </Card>
+      </Col>
+        <Col xs={10} md={6}  className = "align-self-center">
+        <Card className = "card">
+        <Card.Img variant="top" className = "card-magazine-img"/>
+        <Card.Body>
+          <Card.Title>Refresh - the Official Magazine</Card.Title>
+          <Card.Text>
+          We put in all our activities into our half-yearly magazine, Refresh! Exciting articles on tech, and contributions from our student members.
+          </Card.Text>
+          <Button variant="success">Read</Button>
+        </Card.Body>
+      </Card>
+      </Col>
+        
+      </Row>
+        
+      </Container>
     ); 
   }
 }

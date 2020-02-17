@@ -1,25 +1,21 @@
 import React from "react";
-import { Card, CardGroup } from "react-bootstrap";
+import { Card } from "react-bootstrap";
 import Button from "./button";
 import image from "../Assets/undraw_team_page_pgpr@2x.png";
+import Title from "../Styles/title";
+import SubTitle from "../Styles/subTitle";
+import BodyText from "../Styles/bodyText";
+import StyledCardGroup from "../Styles/styledCardGroup";
 
 class Team extends React.Component {
   render() {
     return (
-      <CardGroup
-        style={{
-          marginLeft: 10 + `%`,
-          marginRight: 10 + `%`,
-          marginBottom: 3 + `em`,
-          marginTop: 3 + `em`,
-          border: `none`
-        }}
-      >
+      <StyledCardGroup>
         <Card
           style={{
             border: `none`
           }}
-          className="d-none d-lg-block"
+          className="d-none d-md-block my-auto"
         >
           <Card.Img src={image}></Card.Img>
         </Card>
@@ -29,51 +25,21 @@ class Team extends React.Component {
             margin: 'auto ' + 10 + `px`
           }}
         >
-          <Card.Title
-            style={{
-              fontFamily: [`Open Sans`, `sans-serif`],
-              fontSize: 32 + `px`,
-              color: `#464242`,
-              display: `flex`
-            }}
-          >
-            Team
-          </Card.Title>
-          <Card.Subtitle
-            style={{
-              fontFamily: [`Open Sans`, `sans-serif`],
-              fontSize: 16 + `px`,
-              color: `#7a7474`,
-              padding: 0 + `rem`,
-              paddingBottom: 1 + `rem`,
-              display: `flex`
-            }}
-          >
-            Who makes all the fun happen?
-          </Card.Subtitle>
-          <div
-          classname="mb-3"
-            style={{
-              fontFamily: [`Open Sans`, `sans-serif`],
-              fontSize: 16 + `px`,
-              color: `#464242`,
-              padding: 0 + `rem`,
-
-              display: `flex`
-            }}
-          >
+          <Title>Team</Title>
+          <SubTitle>Who makes all the fun happen?</SubTitle>
+          <BodyText className="mb-5">
             One log creates a small fire, adequate to warm you up, add just a
             few more pieces to blast an immense bonfire, large enough to warm up
             your entire circle; needless to say that individuality counts but
             teamwork dynamites. At DC KGEC, we celebrate teamwork and attribute
             the success of DC to the wonderful individuals who put untiring
             efforts for it.
-          </div>
+          </BodyText>
           <Button>MEET OUR TEAM</Button>
-          {/* TODO: Button "Join Us"
+          {/* TODO:
            * Link: Learn more about Developer Clubs*/}
         </Card>
-      </CardGroup>
+      </StyledCardGroup>
     );
   }
 }

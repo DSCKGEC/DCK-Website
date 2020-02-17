@@ -1,5 +1,8 @@
 import React from "react";
 import { Card, CardGroup } from "react-bootstrap";
+import { mdiFacebook, mdiYoutube } from "@mdi/js";
+import Icon from "@mdi/react";
+
 
 class Social extends React.Component {
   render() {
@@ -8,18 +11,23 @@ class Social extends React.Component {
         style={{
           marginLeft: 10 + `%`,
           marginRight: 10 + `%`,
-          marginBottom: 10 + `em`,
-          marginTop: 10 + `em`,
+          marginBottom: 2 + `em`,
+          marginTop: 4 + `em`,
           border: `none`,
-          justifyContent: `space-evenly`
+          justifyContent: `space-evenly`,
+          borderTop: 2 + `px solid black`,
+          paddingTop: 30 + `px`,
+          width: '80%',
+          flexWrap: 'wrap'
         }}
-        className="d-table d-lg-flex"
+        className="d-lg-flex"
       >
         <Card
           style={{
-            border: `none`
+            border: `none`,
+            minWidth: '200px'
           }}
-          className="d-table-row d-lg-inline-block"
+          className="d-lg-inline-block mb-3"
         >
           <Card.Title
             style={{
@@ -38,21 +46,25 @@ class Social extends React.Component {
               color: `#464242`,
               padding: 0 + `rem`,
 
-              display: `flex`
+              display: `flex`,
+              flexDirection: `column`
             }}
           >
-            DC KGEC
-            <br />
-            Developer Clubs
-            <br />
-            Meet the Team
+            <a href="/">DC KGEC</a>
+            
+            <a href="#">Developer Clubs</a>
+      
+            <a href="/teams">Meet the Team</a>
+            
+
           </Card.Body>
         </Card>
         <Card
           style={{
-            border: `none`
+            border: `none`,
+            minWidth: '200px'
           }}
-          className="d-table-row d-lg-inline-block"
+          className="d-lg-inline-block mb-3"
         >
           <Card.Title
             style={{
@@ -71,21 +83,21 @@ class Social extends React.Component {
               color: `#464242`,
               padding: 0 + `rem`,
 
-              display: `flex`
+              display: `flex`,
+              flexDirection: `column`
             }}
           >
-            Join us
-            <br />
-            Apply to be a Speaker
-            <br />
-            Read our magazine
+            <a href="#" href="http://bit.ly/JoinDCKGEC" target="_blank">Join us</a>
+            <a href="#" target="_blank">Apply to be a Speaker</a>
+            <a href="#" target="_blank">Read our magazine</a>
           </Card.Body>
         </Card>
         <Card
           style={{
-            border: `none`
+            border: `none`,
+            minWidth: '250px'
           }}
-          className="d-table-row d-lg-inline-block"
+          className="d-lg-inline-block mb-3"
         >
           <Card.Title
             style={{
@@ -104,11 +116,28 @@ class Social extends React.Component {
               color: `#464242`,
               padding: 0 + `rem`,
 
-              display: `flex`
+              display: `flex`,
+              flexDirection: `column`
             }}
           >
             Email: kgec.developers.circle@gmail.com
             <br />
+            <div className = "d-flex mt-2"> 
+            <a href="https://www.facebook.com/pg/dckgec/" className="mr-2" target="_blank">
+              <Icon
+                path={mdiFacebook}
+                size={1.3}
+                title="Facebook"
+              ></Icon>
+            </a>
+            <a href="https://www.youtube.com/channel/UChIuhjS8Kny2wc7mZrVjSuQ" className="mr-2" target="_blank">    
+                <Icon
+                  path={mdiYoutube}
+                  size={1.3}
+                  title="YouTube"
+                ></Icon>
+            </a>
+            </div>
           </Card.Body>
         </Card>
       </CardGroup>

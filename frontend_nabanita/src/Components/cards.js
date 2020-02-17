@@ -11,14 +11,15 @@ class Cards extends React.Component {
         style={{
           marginLeft: 10 + `%`,
           marginRight: 10 + `%`,
-          marginBottom: 10 + `em`,
-          marginTop: 10 + `em`,
+          marginBottom: 3 + `em`,
+          marginTop: 3 + `em`,
           border: `none`,
-          justifyContent: `space-evenly`
+          justifyContent: `space-evenly`,
         }}
-        className="d-table d-lg-flex"
+        className="d-lg-flex"
       >
         <Card
+          className="mb-4"
           style={{
             boxShadow: `0 14px 26px -12px rgba(156, 39, 176, 0.42),
                         0 4px 23px 0px rgba(0, 0, 0, 0.12),
@@ -27,10 +28,10 @@ class Cards extends React.Component {
             border: `none`,
             paddingLeft: 2 + `rm`,
             paddingRight: 2 + `rm`,
-            maxWidth: 25 + `rem`
-            // marginBottom: 20 + `rem`
+            maxWidth: 25 + `rem`,
+            marginBottom: 20 + `px`
           }}
-          className="d-table-row d-lg-block"
+          className="d-lg-block"
         >
           <Card.Img src={image}></Card.Img>
           <Card.Title
@@ -59,9 +60,14 @@ class Cards extends React.Component {
             Here at DC KGEC we put the fun in functions and events. Attend Study
             Jams/ Hackathons/ Developer Conferences to learn more about the
             latest technologies.
+            
           </Card.Body>
-          <Button>KNOW MORE</Button>
+          <Button className="mb-4" style= 
+          {{
+            marginLeft: 2 + `rem`,
+          }}>KNOW MORE</Button>
         </Card>
+          
         <Card
           style={{
             boxShadow: `0 14px 26px -12px rgba(156, 39, 176, 0.42),
@@ -71,10 +77,10 @@ class Cards extends React.Component {
             border: `none`,
             paddingLeft: 2 + `rm`,
             paddingRight: 2 + `rm`,
-            maxWidth: 25 + `rem`
-            // marginBottom: 20 + `rem`
+            maxWidth: 25 + `rem`,
+            marginBottom: 20 + `px`
           }}
-          className="d-table-row d-lg-block"
+          className="d-lg-block"
         >
           <Card.Img src={image2}></Card.Img>
           <Card.Title
@@ -104,7 +110,10 @@ class Cards extends React.Component {
             Exciting articles on tech, and contributions from our student
             members.
           </Card.Body>
-          <Button>READ IT</Button>
+          <Button className="mb-4" style= 
+          {{
+            marginLeft: 2 + `rem`,
+          }}>READ IT</Button>
         </Card>
       </CardDeck>
     );
