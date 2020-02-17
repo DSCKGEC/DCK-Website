@@ -1,7 +1,7 @@
 import React from "react";
 import { Card, CardGroup } from "react-bootstrap";
 import Button from "./button";
-import image from "../Assets/Developers_doing_discussion_ab@2x.png";
+import image from "../Assets/cover.png";
 import styled from "styled-components";
 import Title from "../Styles/title";
 import logo from "../Assets/logo_bk@2x.png";

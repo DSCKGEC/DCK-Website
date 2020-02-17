@@ -4,7 +4,7 @@ import Title from "../Styles/title";
 import SubTitle from "../Styles/subTitle";
 import styled from "styled-components";
 
-import gdg from "../Assets/gdg@2x.png";
+import mw_logo from "../Assets/mw_logo.png";
 import google_dev from "../Assets/google_dev@2x.png";
 import fb_dev from "../Assets/highres_452804751@2x.png";
 
@@ -50,9 +50,9 @@ class Partner extends React.Component {
             display: `block`
           }}
         >
-          <Card.Img src={gdg} style={{ hight: 80, width: 80 }} />
-          <Card.Img src={google_dev} style={{ hight: 80, width: 80 }} />
-          <Card.Img src={fb_dev} style={{ hight: 80, width: 80 }} />
+          <Card.Img src={google_dev} style={{ height: 120, width: 120, margin: 30 }} />
+          <Card.Img src={fb_dev} style={{ height: 120, width:160, margin: 30 }} />
+          <Card.Img src={mw_logo} style={{ height: 120, width: 120, margin: 20 }} />
         </div>
       </Card>
     );
