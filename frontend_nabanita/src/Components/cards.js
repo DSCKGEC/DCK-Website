@@ -16,7 +16,7 @@ class Cards extends React.Component {
           border: `none`,
           justifyContent: `space-evenly`
         }}
-        className="d-table d-lg-flex"
+        className="d-table d-sm-flex"
       >
         <Card
           style={{
@@ -30,7 +30,7 @@ class Cards extends React.Component {
             maxWidth: 25 + `rem`
             // marginBottom: 20 + `rem`
           }}
-          className="d-table-row d-lg-block"
+          className="d-table-row d-sm-block"
         >
           <Card.Img src={image}></Card.Img>
           <Card.Title
@@ -74,7 +74,7 @@ class Cards extends React.Component {
             maxWidth: 25 + `rem`
             // marginBottom: 20 + `rem`
           }}
-          className="d-table-row d-lg-block"
+          className="d-table-row d-sm-block"
         >
           <Card.Img src={image2}></Card.Img>
           <Card.Title

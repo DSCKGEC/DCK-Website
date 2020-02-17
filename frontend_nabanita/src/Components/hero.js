@@ -4,7 +4,7 @@ import Button from "./button";
 import image from "../Assets/Developers_doing_discussion_ab@2x.png";
 import styled from "styled-components";
 import Title from "../Styles/title";
-import logo from "../Assets/logo_bk@2x.png";
+import logo from "../Assets/logo.png";
 
 import BodyText from "../Styles/bodyText";
 
@@ -57,6 +57,7 @@ class Hero extends React.Component {
           }}
         >
           <img
+            alt="logo"
             src={logo}
             height="100"
             width="100"
