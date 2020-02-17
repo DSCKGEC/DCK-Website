@@ -2,7 +2,10 @@ import React from "react";
 // import logo from "./logo.svg";
 import "./App.css";
 import Home from "./Pages/home";
+import TeamPage from "./Pages/teamPage";
 import "bootstrap/dist/css/bootstrap.min.css";
+
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 
 function App() {
   return (
@@ -21,7 +24,12 @@ function App() {
           Learn React
         </a>
       </header> */}
-      <Home />
+      <Router>
+        <Switch>
+        <Route path="/" exact component = {Home} />
+          <Route path="/team" exact component= {TeamPage} />
+        </Switch>
+      </Router>
     </div>
   );
 }

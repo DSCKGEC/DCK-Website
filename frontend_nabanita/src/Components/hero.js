@@ -10,14 +10,15 @@ class Hero extends React.Component {
         style={{
           marginLeft: 10 + `%`,
           marginRight: 10 + `%`,
-          marginBottom: 10 + `em`,
-          marginTop: 10 + `em`,
+          marginBottom: 3 + `em`,
+          marginTop: 3 + `em`,
           border: `none`
         }}
       >
         <Card
           style={{
-            border: `none`
+            border: `none`,
+            margin: 'auto ' + 0
           }}
         >
           <Card.Title
@@ -30,18 +31,19 @@ class Hero extends React.Component {
           >
             Developers Club KGEC
           </Card.Title>
-          <Card.Body
+          <div
             style={{
               fontFamily: [`Open Sans`, `sans-serif`],
               fontSize: 16 + `px`,
               color: `#464242`,
               textAlign: `center`,
               display: `flex`,
-              alignSelf: `center`
+              alignSelf: `center`,
             }}
           >
             Kalyani Government Engineering College
-          </Card.Body>
+            
+          </div>
           <Button>CALL TO ACTION</Button>
         </Card>
         <Card

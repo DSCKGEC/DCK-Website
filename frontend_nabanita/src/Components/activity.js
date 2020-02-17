@@ -11,14 +11,15 @@ class Activity extends React.Component {
           style={{
             marginLeft: 10 + `%`,
             marginRight: 10 + `%`,
-            marginBottom: 10 + `em`,
-            marginTop: 10 + `em`,
+            marginBottom: 3 + `em`,
+            marginTop: 3 + `em`,
             border: `none`
           }}
         >
           <Card
             style={{
-              border: `none`
+              border: `none`,
+              margin: 'auto ' + 10 + `px`
             }}
           >
             <Card.Title
@@ -43,7 +44,8 @@ class Activity extends React.Component {
             >
               How do we make technology fun to learn?
             </Card.Subtitle>
-            <Card.Body
+            <div
+            className="mb-3"
               style={{
                 fontFamily: [`Open Sans`, `sans-serif`],
                 fontSize: 16 + `px`,
@@ -56,7 +58,7 @@ class Activity extends React.Component {
               Developers Club KGEC is inspired by the Google Developers' Family.
               The motive is to create a local ecosystem of Developers in and
               around the Campus. And having fun doing it.
-            </Card.Body>
+            </div>
             {/* TODO: Button "Check Out Our Activities"
              * Link: Read about our experiences*/}
             <Button>CHECK OUT OUR ACTIVITIES</Button>

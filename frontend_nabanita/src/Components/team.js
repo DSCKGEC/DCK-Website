@@ -10,8 +10,8 @@ class Team extends React.Component {
         style={{
           marginLeft: 10 + `%`,
           marginRight: 10 + `%`,
-          marginBottom: 10 + `em`,
-          marginTop: 10 + `em`,
+          marginBottom: 3 + `em`,
+          marginTop: 3 + `em`,
           border: `none`
         }}
       >
@@ -25,7 +25,8 @@ class Team extends React.Component {
         </Card>
         <Card
           style={{
-            border: `none`
+            border: `none`,
+            margin: 'auto ' + 10 + `px`
           }}
         >
           <Card.Title
@@ -50,7 +51,8 @@ class Team extends React.Component {
           >
             Who makes all the fun happen?
           </Card.Subtitle>
-          <Card.Body
+          <div
+          classname="mb-3"
             style={{
               fontFamily: [`Open Sans`, `sans-serif`],
               fontSize: 16 + `px`,
@@ -66,7 +68,7 @@ class Team extends React.Component {
             teamwork dynamites. At DC KGEC, we celebrate teamwork and attribute
             the success of DC to the wonderful individuals who put untiring
             efforts for it.
-          </Card.Body>
+          </div>
           <Button>MEET OUR TEAM</Button>
           {/* TODO: Button "Join Us"
            * Link: Learn more about Developer Clubs*/}

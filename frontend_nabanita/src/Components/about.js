@@ -10,8 +10,8 @@ class About extends React.Component {
         style={{
           marginLeft: 10 + `%`,
           marginRight: 10 + `%`,
-          marginBottom: 10 + `em`,
-          marginTop: 10 + `em`,
+          marginBottom: 3 + `em`,
+          marginTop: 3 + `em`,
           border: `none`
         }}
       >
@@ -25,7 +25,8 @@ class About extends React.Component {
         </Card>
         <Card
           style={{
-            border: `none`
+            border: `none`,
+            margin: 'auto ' + 10 + `px`
           }}
         >
           <Card.Title
@@ -50,7 +51,8 @@ class About extends React.Component {
           >
             What do we do at DC KGEC?
           </Card.Subtitle>
-          <Card.Body
+          <div
+          class="mb-3"
             style={{
               fontFamily: [`Open Sans`, `sans-serif`],
               fontSize: 16 + `px`,
@@ -65,7 +67,7 @@ class About extends React.Component {
             by Google Developers is an initiative to grow their knowledge on
             developer technologies and more through peer to peer workshops and
             events, and gain relevant industry experience.
-          </Card.Body>
+          </div>
           <Button>JOIN US</Button>
           {/* TODO: Button "Join Us"
            * Link: Learn more about Developer Clubs*/}

@@ -4,42 +4,17 @@ import { Card, CardGroup } from "react-bootstrap";
 class Footer extends React.Component {
   render() {
     return (
-      <CardGroup
+      <footer
+        className="conatiner d-flex justify-content-center"
         style={{
-          backgroundColor: `#f8f9fA`
+          backgroundColor: `#f8f9fA`,
+          paddingTop: 15 + `px`
         }}
       >
-        <Card
-          style={{
-            border: `none`,
-            backgroundColor: `#f8f9fA`
-          }}
-        >
-          <Card.Body
-            style={{
-              display: `flex`
-            }}
-          >
-            DC KGEC
-          </Card.Body>
-        </Card>
-        <Card
-          style={{
-            border: `none`,
-            backgroundColor: `#f8f9fA`
-          }}
-        >
-          <Card.Body
-            style={{
-              display: `inline`,
-              textAlign: `end`
-            }}
-            className=""
-          >
-            © Copyright DC KGEC
-          </Card.Body>
-        </Card>
-      </CardGroup>
+        <p>
+          <strong>&copy; DC KGEC 2020 </strong>| All Rights Reserved
+        </p>
+      </footer>
     );
   }
 }

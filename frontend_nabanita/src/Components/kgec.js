@@ -10,14 +10,15 @@ class KGEC extends React.Component {
         style={{
           marginLeft: 10 + `%`,
           marginRight: 10 + `%`,
-          marginBottom: 10 + `em`,
-          marginTop: 10 + `em`,
+          marginBottom: 3 + `em`,
+          marginTop: 3 + `em`,
           border: `none`
         }}
       >
         <Card
           style={{
-            border: `none`
+            border: `none`,
+            margin: 'auto ' + 10 + `px`
           }}
         >
           <Card.Title
@@ -42,7 +43,7 @@ class KGEC extends React.Component {
           >
             What do we do at DC KGEC?
           </Card.Subtitle> */}
-          <Card.Body
+          <div
             style={{
               fontFamily: [`Open Sans`, `sans-serif`],
               fontSize: 16 + `px`,
@@ -59,7 +60,7 @@ class KGEC extends React.Component {
             regulated, operated and administered by the Government of West
             Bengal. KGEC is ranked no 10 in all India rankings of Top 100
             Engineering College in India in 2012.
-          </Card.Body>
+          </div>
           {/* <Button>JOIN US</Button> */}
           {/* TODO: Button "Join Us"
            * Link: Learn more about Developer Clubs*/}
