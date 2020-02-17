@@ -5,7 +5,12 @@ class AboutKgec extends Component{
 
   render(){
     return(
-        <Container className = "h-50 w-100">
+        <Container style={{
+          marginLeft: 10 + `%`,
+          marginRight: 10 + `%`,
+          marginBottom: 10 + `em`,
+          marginTop: 10 + `em`,
+          justifyContent: `space-evenly`}}>
         <Row className="justify-content-sm-center">
         <Col xs={9} md={6}>
         <p className = "heading-main">About KGEC</p>

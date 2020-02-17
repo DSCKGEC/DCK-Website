@@ -5,17 +5,20 @@ class Partners extends Component{
 
   render(){
     return(
-        <Container  className = "h-50 w-100">
+        <Container style={{
+          marginLeft: 10 + `%`,
+          marginRight: 10 + `%`,
+          marginBottom: 10 + `em`,
+          marginTop: 10 + `em`,
+          justifyContent: `space-evenly`}}>
         <Row>
-        <Col  className = "align-self-center">
+        <Col  xs={9} md={7}>
         <p className = "heading-main">Partners</p>
         <p className = "heading-sub">Collaborating for a better future</p>
         </Col>
-        <Col style = {{display: "flex"}}>
-        <img className = "partner-img1"></img>
-        <img className = "partner-img2"></img>
-        <img className = "partner-img3"></img>
-
+        </Row>
+        <Row>
+        <Col>
         </Col>
         </Row>
         </Container>

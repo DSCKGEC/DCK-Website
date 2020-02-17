@@ -6,13 +6,18 @@ class Activity extends Component{
 
   render(){
     return(
-        <Container  className = "h-50 w-100">
+        <Container style={{
+          marginLeft: 10 + `%`,
+          marginRight: 10 + `%`,
+          marginBottom: 10 + `em`,
+          marginTop: 10 + `em`,
+          justifyContent: `space-evenly`}}>
         <Row>
           <Col xs={9} md={6}>
             <p className="heading-main">Activities</p>
             <p className ="heading-sub">How do we make technology fun to learn?</p>
             <p className = "text">Developers Club KGEC is inspired by the Google Developers' Family. The motive is to create a local ecosystem of Developers in and around the Campus. And having fun doing it.</p>
-            <Button variant = "info">Check out our activities</Button>
+            <Button variant = "success">Check out our activities</Button>
             <p className ="link">Read about our experiences</p>
           </Col>
           <Col xs={9} md={6}><img className = "img-activities"></img></Col>

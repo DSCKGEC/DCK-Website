@@ -6,13 +6,6 @@
   padding: auto;
 }
 
-.topbar {
-  height: 40rem;
-  margin: auto;
-  padding: auto;
-  display: flex;
-}
-
 
 .img-logo {
   background: transparent url("templates/images/logo.png") 0% 0% no-repeat
@@ -26,12 +19,12 @@
 
 .img-topbar {
   
-  width: 600px;
-  height: 500px;
+  width: 650px;
+  height: 450px;
   background: transparent
     url("templates/images/Developers doing discussion about wireframe.png") 0%
     0% no-repeat padding-box;
-  opacity: 1;
+  opacity: 0.6;
   box-shadow: 0px 3px 15px #00000029;
 
 }
@@ -95,7 +88,7 @@
   box-shadow: 0px 3px 15px #00000029;
 
 }
-.card-events {
+.card{
 
   width: 450px;
   height: 450px;
@@ -104,15 +97,7 @@
   border-radius: 12px;
   opacity: 1;
 }
-.card-magazine {
 
-  width: 450px;
-  height: 450px;
-  background: #ffffff 0% 0% no-repeat padding-box;
-  box-shadow: 0px 3px 12px #00000029;
-  border-radius: 12px;
-  opacity: 1;
-}
 .card-events-img {
 
   width: 450px;
@@ -134,8 +119,8 @@
 .partner-img1 {
   margin: auto;
   padding: auto;
-  height: 50%;
-  width: 18%;
+  height: 70px;
+  width: 8%;
   background: transparent url("templates/images/gdg.png") 0% 0% no-repeat
     padding-box;
   opacity: 1;
@@ -146,8 +131,8 @@
   
   margin: auto;
   padding: auto;
-  height: 50%;
-  width: 18%;
+  height: 70px;
+  width: 8%;
   background: transparent url("templates/images/google_dev.png") 0% 0% no-repeat
     padding-box;
   opacity: 1;
@@ -158,8 +143,8 @@
   
   margin: auto;
   padding: auto;
-  height: 50%;
-  width: 18%;
+  height: 70px;
+  width: 8%;
 
   background: transparent url("templates/images/highres_452804751.png") 0% 0%
     no-repeat;
@@ -179,18 +164,10 @@
   box-shadow: 0px 3px 15px #00000029;
 
 }
-
-
 .link{
 size: 0.3rem;
 font: Open Sans;
 letter-spacing: 0;
 color: #7A7474;
 opacity: 1;
-}
-
-.component{
-  margin: auto;
-  padding: auto;
-
 }

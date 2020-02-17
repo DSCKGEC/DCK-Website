@@ -6,7 +6,12 @@ class Team extends Component{
 
   render(){
     return(
-        <Container  className = "h-50 w-100">
+        <Container style={{
+          marginLeft: 10 + `%`,
+          marginRight: 10 + `%`,
+          marginBottom: 10 + `em`,
+          marginTop: 10 + `em`,
+          justifyContent: `space-evenly`}}>
         <Row>
         <Col xs={9} md={6}><img className = "img-team"></img></Col>
         <Col xs={9} md={6}>

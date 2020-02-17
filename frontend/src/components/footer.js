@@ -5,8 +5,15 @@ class Footer extends Component{
 
   render(){
     return(
-        <Container className = "h-50 w-100">
-          <Row>
+        <Container style={{
+          marginLeft: 10 + `%`,
+          marginRight: 10 + `%`,
+          marginTop: 10 + `em`,
+          justifyContent: `space-evenly`}}>
+          
+          <Row style ={{
+          marginBottom: 5 + `em`,
+          }}>
           <Col xs={9} md={3}>
           <ul type = "none">
           <li className = "heading-sub">About</li>
@@ -33,10 +40,11 @@ class Footer extends Component{
           </Col>
           </Row>
           
-          <Row className = "justify-content-around">
+          <Row>
           <Col xs={9} md={9}>
-          
           <p className = "heading-sub"><img className = "img-logo"></img>DC KGEC</p>
+          </Col>
+          <Col>
           <p className = "text">© Copyright DC KGEC</p>
           </Col>
           </Row>

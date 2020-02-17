@@ -6,7 +6,13 @@ class Topbar extends Component{
 
   render(){
     return(
-        <Container  className = "component">
+        <Container style={{
+          marginLeft: 10 + `%`,
+          marginRight: 10 + `%`,
+          marginBottom: 10 + `em`,
+          marginTop: 10 + `em`,
+          justifyContent: `space-evenly`
+        }}>
         <Row>
         <Col xs={9} md={6} className = "align-self-center"> 
             <p className = "heading-main" >Developers Club KGEC </p>
