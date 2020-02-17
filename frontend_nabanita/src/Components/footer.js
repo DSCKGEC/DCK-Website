@@ -1,45 +1,28 @@
 import React from "react";
-import { Card, CardGroup } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 
 class Footer extends React.Component {
   render() {
     return (
-      <CardGroup
+      <div
         style={{
+          padding: 1 + `rem`,
           backgroundColor: `#f8f9fA`
         }}
       >
-        <Card
-          style={{
-            border: `none`,
-            backgroundColor: `#f8f9fA`
-          }}
-        >
-          <Card.Body
-            style={{
-              display: `flex`
-            }}
-          >
-            DC KGEC
-          </Card.Body>
-        </Card>
-        <Card
-          style={{
-            border: `none`,
-            backgroundColor: `#f8f9fA`
-          }}
-        >
-          <Card.Body
-            style={{
-              display: `inline`,
-              textAlign: `end`
-            }}
-            className=""
-          >
-            © Copyright DC KGEC
-          </Card.Body>
-        </Card>
-      </CardGroup>
+        <Container fluid>
+          <Row>
+            <Col>DC KGEC</Col>
+            <Col
+              style={{
+                textAlign: `end`
+              }}
+            >
+              © Copyright DC KGEC
+            </Col>
+          </Row>
+        </Container>
+      </div>
     );
   }
 }

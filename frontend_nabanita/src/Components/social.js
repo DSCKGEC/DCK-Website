@@ -1,117 +1,80 @@
 import React from "react";
-import { Card, CardGroup } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
+
+import BodyText from "../Styles/bodyText";
+import Title from "../Styles/title";
 
 class Social extends React.Component {
   render() {
     return (
-      <CardGroup
+      <div
         style={{
           marginLeft: 10 + `%`,
           marginRight: 10 + `%`,
           marginBottom: 10 + `em`,
-          marginTop: 10 + `em`,
-          border: `none`,
-          justifyContent: `space-evenly`
+          marginTop: 10 + `em`
         }}
-        className="d-table d-lg-flex"
       >
-        <Card
-          style={{
-            border: `none`
-          }}
-          className="d-table-row d-lg-inline-block"
-        >
-          <Card.Title
-            style={{
-              fontFamily: [`Open Sans`, `sans-serif`],
-              fontSize: 24 + `px`,
-              color: `#464242`,
-              display: `flex`
-            }}
-          >
-            About
-          </Card.Title>
-          <Card.Body
-            style={{
-              fontFamily: [`Open Sans`, `sans-serif`],
-              fontSize: 16 + `px`,
-              color: `#464242`,
-              padding: 0 + `rem`,
-
-              display: `flex`
-            }}
-          >
-            DC KGEC
-            <br />
-            Developer Clubs
-            <br />
-            Meet the Team
-          </Card.Body>
-        </Card>
-        <Card
-          style={{
-            border: `none`
-          }}
-          className="d-table-row d-lg-inline-block"
-        >
-          <Card.Title
-            style={{
-              fontFamily: [`Open Sans`, `sans-serif`],
-              fontSize: 24 + `px`,
-              color: `#464242`,
-              display: `flex`
-            }}
-          >
-            Important Links
-          </Card.Title>
-          <Card.Body
-            style={{
-              fontFamily: [`Open Sans`, `sans-serif`],
-              fontSize: 16 + `px`,
-              color: `#464242`,
-              padding: 0 + `rem`,
-
-              display: `flex`
-            }}
-          >
-            Join us
-            <br />
-            Apply to be a Speaker
-            <br />
-            Read our magazine
-          </Card.Body>
-        </Card>
-        <Card
-          style={{
-            border: `none`
-          }}
-          className="d-table-row d-lg-inline-block"
-        >
-          <Card.Title
-            style={{
-              fontFamily: [`Open Sans`, `sans-serif`],
-              fontSize: 24 + `px`,
-              color: `#464242`,
-              display: `flex`
-            }}
-          >
-            Social
-          </Card.Title>
-          <Card.Body
-            style={{
-              fontFamily: [`Open Sans`, `sans-serif`],
-              fontSize: 16 + `px`,
-              color: `#464242`,
-              padding: 0 + `rem`,
-
-              display: `flex`
-            }}
-          >
-            Email: kgec.developers.circle@gmail.com
-            <br />
-          </Card.Body>
-        </Card>
-      </CardGroup>
+        <Container fluid>
+          <Row>
+            <Col>
+              <Title
+                style={{
+                  fontSize: 24 + `px`
+                }}
+              >
+                About
+              </Title>
+              <BodyText>
+                DC KGEC
+                <br />
+                Developer Clubs
+                <br />
+                Meet the Team
+              </BodyText>
+            </Col>
+            <Col>
+              {" "}
+              <Title
+                style={{
+                  fontSize: 24 + `px`
+                }}
+              >
+                Important Links
+              </Title>
+              <BodyText>
+                Join us
+                <br />
+                Apply to be a Speaker
+                <br />
+                Read our magazine
+              </BodyText>
+            </Col>
+            <Col className="d-none d-md-block">
+              <Title
+                style={{
+                  fontSize: 24 + `px`
+                }}
+              >
+                Social
+              </Title>
+              <BodyText>Email: kgec.developers.circle@gmail.com</BodyText>
+            </Col>
+          </Row>
+          <Row>
+            <Col className="d-block d-md-none">
+              <Title
+                style={{
+                  fontSize: 24 + `px`
+                }}
+              >
+                Social
+              </Title>
+              <BodyText>Email: kgec.developers.circle@gmail.com</BodyText>
+            </Col>
+          </Row>
+        </Container>
+      </div>
     );
   }
 }
