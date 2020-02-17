@@ -2,7 +2,7 @@ import React from "react";
 import Title from "../Styles/title";
 import SubTitle from "../Styles/subTitle";
 import styled from "styled-components";
-
+import {Card} from 'react-bootstrap';
 import mw_logo from "../Assets/mw_logo.png";
 import google_dev from "../Assets/google_dev@2x.png";
 import fb_dev from "../Assets/highres_452804751@2x.png";
@@ -39,7 +39,7 @@ class Partner extends React.Component {
           <StyledTitle>Partners</StyledTitle>
           <StyledSubTitle>Collaborating for a better future</StyledSubTitle>
         </div>
-        className="d-flex"
+        <div className="d-flex"
           style={{
             border: `none`,
             minwWidth: 40 + `%`,
@@ -54,6 +54,9 @@ class Partner extends React.Component {
           <Card.Img src={fb_dev} style={{ height: 150, width:190, padding: 30 }} className="d-block mx-auto my-2"/>
           <Card.Img src={mw_logo} style={{ height: 150, width: 150, padding: 30 }} className="d-block mx-auto my-2"/>
         </div>
+        </div>
     );
   }
 }
+
+export default Partner;
