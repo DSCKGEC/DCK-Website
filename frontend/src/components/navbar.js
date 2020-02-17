@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
-import {Link} from 'react-router-dom';
-import { Navbar, Nav, Button, Container } from 'react-bootstrap';
+import { Navbar, Nav, Button } from 'react-bootstrap';
 
  
 class NavbarMod extends Component{
@@ -8,7 +7,7 @@ class NavbarMod extends Component{
   render(){
     return(
       <>
-        <Navbar collapseOnSelect expand="lg" bg="light" variant="light">
+        <Navbar collapseOnSelect expand="lg" bg="light" variant="light" fixed="top">
         <Navbar.Brand href="/" className = "img-logo"></Navbar.Brand>
         <Navbar.Brand href="/">DCKGEC</Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -21,8 +20,7 @@ class NavbarMod extends Component{
             <div ></div>
           </Nav>
           <Nav>
-            <Nav.Link href="/login">Login</Nav.Link>
-            <Nav.Link href="/register">Register</Nav.Link>
+            <Nav.Link href="/login"><Button variant = "success">Sign Up</Button></Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Navbar>
