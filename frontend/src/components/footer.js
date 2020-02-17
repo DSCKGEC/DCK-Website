@@ -1,32 +1,54 @@
 import React, {Component} from 'react';
+import { Container, Row, Col } from 'react-bootstrap';
 
 class Footer extends Component{
 
   render(){
     return(
-        <div>
-            <div className= "footer"></div>
-            <div className="footer-about">About</div>
-            <div className="ab-link1">DC KGEC</div>
-            <div className="ab-link2">Developer Clubs</div>
-            <div className="ab-link3">Meet the Team</div>
-            
-            <div className="footer-link">Important Links</div>
-            <div className="li-link1">Join us</div>
-            <div className="li-link2">Apply to be a Speaker</div>
-            <div className="li-link3">Read our magazine</div>
-            
-            <div className="footer-social">Social</div>
-            <div className="so-link1">Email: kgec.developers.circle@gmail.com</div>
-            <div className="so-link2"></div>
-            <div className="so-link3"></div>
-            <div className="so-link4"></div>
-            <div className="footer-logo"></div>
-            <div className="footer-caption">DC KGEC</div>
-            <div className="footer-text">© Copyright DC KGEC</div>
-            
-            
-        </div>
+        <Container style={{
+          marginLeft: 10 + `%`,
+          marginRight: 10 + `%`,
+          marginTop: 10 + `em`,
+          justifyContent: `space-evenly`}}>
+          
+          <Row style ={{
+          marginBottom: 5 + `em`,
+          }}>
+          <Col xs={9} md={3}>
+          <ul type = "none">
+          <li className = "heading-sub">About</li>
+          <li className = "link">DC KGEC</li>
+          <li className = "link">Developer Clubs</li>
+          <li className = "link">Meet the Team</li>
+          </ul>
+          </Col>
+          <Col xs={9} md={3}>
+          <ul type = "none">
+
+          <li  className = "heading-sub">Important Links</li>
+          <li  className = "link">Join us</li>
+          <li  className = "link">Apply to be a Speaker</li>
+          <li  className = "link">Read our magazine</li>
+          </ul>
+          </Col>
+          <Col xs={9} md={3}>
+          <ul type = "none">
+
+          <li className = "heading-sub">Social</li>
+          <li className = "link">Email: sample@gmail.com</li>
+          </ul>
+          </Col>
+          </Row>
+          
+          <Row>
+          <Col xs={9} md={9}>
+          <p className = "heading-sub"><img className = "img-logo"></img>DC KGEC</p>
+          </Col>
+          <Col>
+          <p className = "text">© Copyright DC KGEC</p>
+          </Col>
+          </Row>
+      </Container>
     ); 
   }
 }
