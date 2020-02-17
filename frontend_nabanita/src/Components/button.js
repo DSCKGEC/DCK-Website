@@ -1,10 +1,10 @@
 import styled from "styled-components";
-import theme from "../Styles/theme";
 
 const Button = styled.button`
+  /* Adapt the colors based on primary prop */
   background: #536dfe;
   color: white;
-  font-family: ${theme.fonts[0]};
+
   font-size: 1em;
   margin: 1em;
   padding: 0.5em 1em;

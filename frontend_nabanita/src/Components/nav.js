@@ -11,8 +11,8 @@ class NavBar extends React.Component {
         expand="md"
         sticky="top"
         style={{
-          paddingLeft: 5 + `%`,
-          paddingRight: 5 + `%`,
+          paddingLeft: 5 + `em`,
+          paddingRight: 5 + `em`,
           backgroundColor: `white`
         }}
       >

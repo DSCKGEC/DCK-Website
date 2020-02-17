@@ -8,7 +8,7 @@ class Social extends React.Component {
         style={{
           marginLeft: 10 + `%`,
           marginRight: 10 + `%`,
-          marginBottom: 5 + `%`,
+          marginBottom: 10 + `em`,
           marginTop: 10 + `em`,
           border: `none`,
           justifyContent: `space-evenly`
@@ -37,7 +37,6 @@ class Social extends React.Component {
               fontSize: 16 + `px`,
               color: `#464242`,
               padding: 0 + `rem`,
-              marginBottom: 2 + `em`,
 
               display: `flex`
             }}
@@ -71,7 +70,6 @@ class Social extends React.Component {
               fontSize: 16 + `px`,
               color: `#464242`,
               padding: 0 + `rem`,
-              marginBottom: 2 + `em`,
 
               display: `flex`
             }}

@@ -12,12 +12,14 @@ const StyledTitle = styled(Title)`
   text-align: center;
   align-self: center;
   display: block;
+  // font-size: 42px;
 `;
 
 const StyledSubTitle = styled(SubTitle)`
   text-align: center;
   align-self: center;
   display: block;
+  // font-size: 24px;
 `;
 
 class Partner extends React.Component {
