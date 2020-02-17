@@ -120,7 +120,7 @@ class Social extends React.Component {
               flexDirection: `column`
             }}
           >
-            Email: kgec.developers.circle@gmail.com
+            Connect with Us
             <br />
             <div className = "d-flex mt-2"> 
             <a href="https://www.facebook.com/pg/dckgec/" className="mr-2" target="_blank">

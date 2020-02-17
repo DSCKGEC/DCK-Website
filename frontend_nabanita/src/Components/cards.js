@@ -113,7 +113,10 @@ class Cards extends React.Component {
           <Button className="mb-4" style= 
           {{
             marginLeft: 2 + `rem`,
-          }}>READ IT</Button>
+            background: '#95a5a6',
+            borderColor: '#95a5a6',
+            color: '#fff'
+          }}>COMING SOON</Button>
         </Card>
       </CardDeck>
     );
