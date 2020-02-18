@@ -130,7 +130,6 @@ let previous_members = [{
     {
         name: "Krishna Bose",
         post: "Teaching Assistant",
-        picture: puja,
         links: [{
                 to: 'linkedin',
                 icon: mdiLinkedin,
