@@ -1,6 +1,6 @@
 import React from "react";
 import { Card, CardGroup } from "react-bootstrap";
-import { mdiFacebook, mdiYoutube, mdiEmail } from "@mdi/js";
+import { mdiFacebook, mdiYoutube, mdiEmail, mdiGithubBox } from "@mdi/js";
 import Icon from "@mdi/react";
 
 
@@ -120,7 +120,7 @@ class Social extends React.Component {
               flexDirection: `column`
             }}
           >
-            Email: kgec.developers.circle@gmail.com
+            Connect with Us
             <br />
             <div className = "d-flex mt-2"> 
             <a href="https://www.facebook.com/pg/dckgec/" className="mr-2" target="_blank">
@@ -135,6 +135,13 @@ class Social extends React.Component {
                   path={mdiYoutube}
                   size={1.3}
                   title="YouTube"
+                ></Icon>
+            </a>
+            <a href="https://github.com/dckgec" className="mr-2" target="_blank">    
+                <Icon
+                  path={mdiGithubBox}
+                  size={1.3}
+                  title="GitHub"
                 ></Icon>
             </a>
             <a href="mailto:kgec.developers.circle@gmail.com" className="mr-2" target="_blank">    
