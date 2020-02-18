@@ -128,18 +128,18 @@ let previous_members = [{
         ]
     },
     {
-        name: "Puja Sarkar",
-        post: "Human Resource Manager",
+        name: "Krishna Bose",
+        post: "Teaching Assistant",
         picture: puja,
         links: [{
                 to: 'linkedin',
                 icon: mdiLinkedin,
-                link: "https://www.linkedin.com/in/ritankar-paul-95269513a/"
+                link: "https://www.linkedin.com/in/krishnabose/"
             },
             {
-                to: 'mail',
-                icon: mdiEmail,
-                link: "mailto:pujasarkar6054@gmail.com"
+                to: 'github',
+                icon: mdiGithubCircle,
+                link: "https://github.com/krishnabose02"
             }
         ]
     },
