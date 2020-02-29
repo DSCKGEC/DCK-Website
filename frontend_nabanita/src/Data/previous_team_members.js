@@ -140,6 +140,22 @@ let previous_members = [{
             }
         ]
     },
+    {
+        name: "Puja Sarkar",
+        post: "HRM",
+        picture: puja,
+        links: [{
+                to: 'linkedin',
+                icon: mdiLinkedin,
+                link: "#"
+            },
+            {
+                to: 'github',
+                icon: mdiGithubCircle,
+                link: "#"
+            }
+        ]
+    },
 ]
 
 export default previous_members;
