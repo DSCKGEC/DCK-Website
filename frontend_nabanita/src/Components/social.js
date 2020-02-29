@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, CardGroup } from "react-bootstrap";
+import { Card } from "react-bootstrap";
 import { mdiFacebook, mdiYoutube, mdiEmail, mdiGithubBox } from "@mdi/js";
 import Icon from "@mdi/react";
 
@@ -52,7 +52,7 @@ class Social extends React.Component {
           >
             <a href="/">DC KGEC</a>
             
-            <a href="#">Developer Clubs</a>
+            <a href="/">Developer Clubs</a>
       
             <a href="/team">Meet the Team</a>
             
@@ -87,9 +87,9 @@ class Social extends React.Component {
               flexDirection: `column`
             }}
           >
-            <a href="#" href="http://bit.ly/JoinDCKGEC" target="_blank">Join us</a>
-            <a href="#" href="http://bit.ly/DCK-Apply-Speaker" target="_blank">Apply to be a Speaker</a>
-            <a href="#" target="_blank">Read our magazine</a>
+            <a href="http://bit.ly/JoinDCKGEC" target="_blank" rel="noopener noreferrer">Join us</a>
+            <a href="http://bit.ly/DCK-Apply-Speaker" target="_blank" rel="noopener noreferrer">Apply to be a Speaker</a>
+            <a href="/">Read our magazine</a>
           </Card.Body>
         </Card>
         <Card
@@ -123,28 +123,28 @@ class Social extends React.Component {
             Connect with Us
             <br />
             <div className = "d-flex mt-2"> 
-            <a href="https://www.facebook.com/pg/dckgec/" className="mr-2" target="_blank">
+            <a href="https://www.facebook.com/pg/dckgec/" className="mr-2" target="_blank" rel="noopener noreferrer">
               <Icon
                 path={mdiFacebook}
                 size={1.3}
                 title="Facebook"
               ></Icon>
             </a>
-            <a href="https://www.youtube.com/channel/UChIuhjS8Kny2wc7mZrVjSuQ" className="mr-2" target="_blank">    
+            <a href="https://www.youtube.com/channel/UChIuhjS8Kny2wc7mZrVjSuQ" className="mr-2" target="_blank" rel="noopener noreferrer">    
                 <Icon
                   path={mdiYoutube}
                   size={1.3}
                   title="YouTube"
                 ></Icon>
             </a>
-            <a href="https://github.com/dckgec" className="mr-2" target="_blank">    
+            <a href="https://github.com/dckgec" className="mr-2" target="_blank" rel="noopener noreferrer">    
                 <Icon
                   path={mdiGithubBox}
                   size={1.3}
                   title="GitHub"
                 ></Icon>
             </a>
-            <a href="mailto:kgec.developers.circle@gmail.com" className="mr-2" target="_blank">    
+            <a href="mailto:kgec.developers.circle@gmail.com" className="mr-2" target="_blank" rel="noopener noreferrer">    
                 <Icon
                   path={mdiEmail}
                   size={1.3}

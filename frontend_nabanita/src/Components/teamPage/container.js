@@ -1,6 +1,5 @@
 import React from "react";
 import Teamcard from "./teamHero";
-import { CardColumns } from "react-bootstrap";
 import MemberCard from "./membercard";
 import current_team_members from "../../Data/current_team_members";
 import previous_team_members from "../../Data/previous_team_members";

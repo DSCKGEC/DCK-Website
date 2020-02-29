@@ -1,6 +1,5 @@
 import React from "react";
 import { Card } from "react-bootstrap";
-import Button from "./button";
 import image from "../Assets/undraw_team_page_pgpr@2x.png";
 import Title from "../Styles/title";
 import SubTitle from "../Styles/subTitle";

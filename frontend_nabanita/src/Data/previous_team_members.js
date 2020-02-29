@@ -4,11 +4,9 @@ import ramyajit from '../Assets/profile_pic/Ramyajit_Chowdhury.jpg'
 import nabanita from '../Assets/profile_pic/Nabanita_Sarkar.jpeg'
 import abhinav from '../Assets/profile_pic/Abhinav_Ghosh.jpeg'
 import indrashis from '../Assets/profile_pic/Indrashis_Ghosh.jpeg'
-import puja from '../Assets/profile_pic/Puja_Sarkar.jpeg'
 
 
 import {
-    mdiTwitter,
     mdiLinkedin,
     mdiWeb,
     mdiEmail,

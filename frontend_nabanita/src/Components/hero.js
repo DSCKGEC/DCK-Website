@@ -1,12 +1,11 @@
 import React from "react";
 import { Card, CardGroup } from "react-bootstrap";
-import Button from "./button";
 import image from "../Assets/cover.png";
 import styled from "styled-components";
 import Title from "../Styles/title";
 import logo from "../Assets/logo_bk@2x.png";
 
-import BodyText from "../Styles/bodyText";
+// import BodyText from "../Styles/bodyText";
 
 const StyledCardGroup = styled(CardGroup)`
   @media (max-width: 991px) {
@@ -45,13 +44,13 @@ const StyledTitle = styled(Title)`
   }
 `;
 
-const StyledBodyText = styled(BodyText)`
-  text-align: center;
-  align-self: center;
-  display: flex;
-  height: initial;
-  font-size: 24px;
-`;
+// const StyledBodyText = styled(BodyText)`
+//   text-align: center;
+//   align-self: center;
+//   display: flex;
+//   height: initial;
+//   font-size: 24px;
+// `;
 
 class Hero extends React.Component {
   render() {
@@ -64,6 +63,7 @@ class Hero extends React.Component {
           }}
         >
           <img
+            alt="heroImage"
             src={logo}
             height="100"
             width="100"
@@ -85,7 +85,7 @@ class Hero extends React.Component {
             width: `fit-content`
 
           }}
-          href="http://forum.dckgec.ml/" target="_blank">JOIN THE FORUM</a>
+          href="http://forum.dckgec.ml/" target="_blank" rel="noopener noreferrer">JOIN THE FORUM</a>
         </Card>
         <Card
           style={{

@@ -5,6 +5,7 @@ import "./App.css";
 import Home from "./Pages/home";
 import TeamPage from "./Pages/teamPage";
 import Page404 from "./Pages/page404";
+import Events from './Pages/events';
 
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -28,6 +29,7 @@ function App() {
         <Switch>
           <Route path="/" exact component = {Home} />
           <Route path="/team" exact component= {TeamPage} />
+          <Route path="/events" exact component= {Events} />
           <Route component={Page404} />
         </Switch>
         <Social />

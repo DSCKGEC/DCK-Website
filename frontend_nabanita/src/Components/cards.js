@@ -19,7 +19,7 @@ class Cards extends React.Component {
         className="d-lg-flex"
       >
         <Card
-          className="mb-4"
+          className="mb-4 d-lg-block"
           style={{
             boxShadow: `0 14px 26px -12px rgba(156, 39, 176, 0.42),
                         0 4px 23px 0px rgba(0, 0, 0, 0.12),
@@ -31,7 +31,6 @@ class Cards extends React.Component {
             maxWidth: 25 + `rem`,
             marginBottom: 20 + `px`
           }}
-          className="d-lg-block"
         >
           <Card.Img src={image}></Card.Img>
           <Card.Title
