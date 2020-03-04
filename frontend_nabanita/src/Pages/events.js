@@ -91,6 +91,9 @@ const Events = () => {
             
             {FormButton()}
           </div>
+
+          <iframe title="promotional video" src="https://www.youtube.com/embed/hTkezaeGx0Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen className="mb-3" style={{width: "60%", maxWidth: "500px", height: "350px"}}></iframe>
+
           <div className="card-footer text-muted text-center">
             <p className="font-weight-bold mb-2">Point of Contact:</p>
             
